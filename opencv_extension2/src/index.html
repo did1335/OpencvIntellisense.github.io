@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<title>CVIntelli社群</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<style>    
+    #index{
+        background-color: rgba(176, 248, 245, 0.5);
+    } 
+</style>
+</head>
+
+<body>
+  <div id="title">
+    <h1>{{h1}}</h1>
+  </div>
+    <div class="container">  
+    <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" id="index" href="index.html">首頁</a> 
+        <a class="p-2 text-muted" id="index" href="conduct.html">行為準則</a>       
+        <!--<a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>-->
+      </nav>
+    </div>
+      
+    <!--內文-->
+
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+    style="margin: 0px; width: 100%; height: fit-content;">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong><h3 class="d-inline-block mb-2 text-primary" style="text-align:center;">社群緣起</h3></strong>
+        <article id="card">
+            &emsp;&emsp;OpenCV是電腦視覺很方便的函式庫，而VSCODE則為目前主流的IDE，
+			VSCODE中有許多由開源人貢獻的EXTENSION，但卻沒能找到OpenCV的EXTENSION，
+			為了增加coding效率，因這樣的需求，由一群學生自行組成的社群就這樣誕生了!
+            <br/><br/>
+			<strong><h3 class="d-inline-block mb-2 text-primary" style="text-align:center;">一個逐漸成形的開源社群</h3></strong>
+			<br/>
+            &emsp;&emsp;雖然我們不像年會有上千、上萬人，但所有使用的開發工具及工作模式完全比照大型社群，
+			起初資源較少，但開源人是沒有人，沒有人是萬能的，沒有的資源就自己創造，
+			另外小社群有一個好處就是，成員的向心力以及凝聚力能夠緊密的多，一個逐漸成形的開源社群。
+        </article>
+      </div>
+    </div>  
+ 
+
+  </div>
+    
+</body>
+      
+<!--頁尾-->
+<footer class="blog-footer">
+  <div id="copyright">
+    <copyright></copyright>
+  </div>
+</footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/myfootbox.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
+<script>
+  title.$mount("#title");
+  var vm = new Vue({
+    el: '#copyright'
+  });
+  var vm2 = new Vue({
+        el: '.blog-footer'
+    });
+</script>

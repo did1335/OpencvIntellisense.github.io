@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<style>    
+    #plan{
+        background-color: rgba(176, 248, 245, 0.5);
+    }   
+</style>
+</head>
+
+<body>
+        <div id="title">
+                <h1>{{h1}}</h1>
+              </title>
+        <div class="container">      
+            <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+                <nav class="nav d-flex justify-content-between">
+                <a class="p-2 text-muted" id="index" href="index.html">首頁</a> 
+				<a class="p-2 text-muted" id="index" href="conduct.html">行為準則</a>       
+				<!--<a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>-->
+                </nav>
+            </div>
+      
+   
+      
+        <main role="main" class="container">
+		    <h1>行為準則</h1>
+            <div class="row">
+                <!--內文-->     
+                <div class="blog-post">
+                    <article>
+						每一位參與者都應遵守以下準則:
+                        <li>我願意推廣開源精神，成為一位開源人</li>
+						<li>在這裡不分宗教、種族、性別、年齡、國籍，人人平等</li>
+						<li>就算有職務的人也只是位協調者，並不會享有特權</li>
+						<li>尊重彼此，珍惜彼此相聚的時光，嚴禁言語攻擊</li>
+						<li>我願意open mind與夥伴分享及交流</li>
+						<li>多關心社群夥伴，彼此互相協助互相學習與成長</li>    
+                    </article>       
+                </div>
+            <!-- /.blog-post -->
+            </div><!-- /.row -->
+        </main><!-- /.container -->
+    </div>
+</body>
+      
+<!--頁尾-->
+<footer class="blog-footer">
+    <div id="copyright">
+        <copyright></copyright>
+    </div>
+    </footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/myfootbox.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
+<script>
+    title.$mount("#title");
+    var vm = new Vue({
+        el: '#copyright'
+    });
+    var vm2 = new Vue({
+        el: '.blog-footer'
+    });
+</script>
