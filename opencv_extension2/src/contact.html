@@ -18,16 +18,12 @@
 <body>
     <div id="title">
             <h1>{{h1}}</h1>
-            <h2>{{h2}}</h2>
     </title>
     <div class="container">      
         <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
             <nav class="nav d-flex justify-content-between">
-                <a class="p-2 text-muted" id="index" href="index.html">首頁</a>
-                <!--<a class="p-2 text-muted" id="plan" href="plan.html">計畫內容</a>-->
-                <a class="p-2 text-muted" id="cooperate" href="cooperate.html">合作企業</a>
-                <!--<a class="p-2 text-muted" id="info" href="info.html">課程資訊</a>
-                <a class="p-2 text-muted" id="intern" href="intern.html">校外實習媒合</a>-->
+                <a class="p-2 text-muted" id="index" href="index.html">首頁</a> 
+                <a class="p-2 text-muted" id="conduct" href="conduct.html">行為準則</a>       
                 <a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>
             </nav>
         </div>
@@ -36,7 +32,7 @@
         <main role="main" class="container">
             <div class="row">
                 <div class="col-md-10 blog-main">
-                    <h1>國立勤益科技大學機械系</h1>     
+                    <h1>國立勤益科技大學</h1>     
                     <div class="blog-post">                
                         <ul>
                         <li>地址: <span style="color:blue; text-decoration: underline; line-height: 25px;">
@@ -68,15 +64,11 @@
 <script type="text/javascript" src="../js/vue.js"></script>
 <script type="text/javascript" src="../js/view/title.js"></script>
 <script type="text/javascript" src="../js/view/map.js"></script>
-<script type="text/javascript" src="../js/view/myfootbox.js"></script>
 <script type="text/javascript" src="../js/view/copyright.js"></script>
 <script>
     title.$mount("#title");
     map.$mount(".blog-post");            
     var vm = new Vue({
     el: '#copyright'
-    });
-    var vm2 = new Vue({
-        el: '.blog-footer'
     });
 </script>
