@@ -1,21 +1,83 @@
 <!DOCTYPE html>
-<html>
-    <head>          
-        <script src="../js/vue.js"></script>
-        <script src="nav/nav.js">//載入頁首導覽列及頁腳</script>        
-        <script src="index.js"></script>
-    </head>
-    
-    <body> 
-        <div class="content" style="margin:15px;">    
-            <div id="app">
-                <h1 style="text-align: center;">{{ message }}</h1>
-                <p>{{content}}</p>
-            </div>
-        </div>
-    </body>
-</html>
+<head>
+<meta charset="utf-8">
+<title>CVIntelli社群</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript" src="../js/popper.js"></script>
+<script type="text/javascript" src="../js/bootstrap.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+<link rel="stylesheet" type="text/css" href="../css/blog.css" />
+<link rel="stylesheet" type="text/css" href="../css/custom.css" />
+<link rel="stylesheet" type="text/css" href="../css/page/index.css" />
+	
+<style>    
+    #index{
+        background-color: rgba(176, 248, 245, 0.5);
+    } 
+</style>
+</head>
 
+<body>
+  <div id="title">
+    <h1>{{h1}}</h1>
+  </div>
+    <div class="container">  
+    <div class="nav-scroller py-1 mb-2" style="border-bottom: 1px solid black;">
+      <nav class="nav d-flex justify-content-between">
+        <a class="p-2 text-muted" id="index" href="index.html">首頁</a> 
+        <a class="p-2 text-muted" id="conduct" href="conduct.html">行為準則</a>       
+        <!--<a class="p-2 text-muted" id="contact" href="contact.html">聯繫我們</a>-->
+      </nav>
+    </div>
+      
+    <!--內文-->
+	    
+    <div id="buttondiv">
+	<a class="button white" href="https://marketplace.visualstudio.com/items?itemName=did1335.opencv-intellisense" target="_blank"><button><img id="microsoft" aria-hidden="true" class="K7JcSb" height="16" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAQklEQVQ4jWP87if3nwEH4Nz0iLF+FwNO+UY3BkYmXJLEglEDqGAAxYCRYcl7nPHMECPI+H8n7nTA6D6aDgaHARQDAKgRDRsLiHU6AAAAAElFTkSuQmCC" width="20" alt="Image" data-atf="1">
+	Download</button></a>
+	<button><a class="button gray has-icon" href="https://github.com/OpencvIntellisense" target="_blank" rel="noopener">
+		  <svg aria-labelledby="simpleicons-github-dark-icon" lang="" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		  <title id="simpleicons-github-dark-icon" lang="en">GitHub Dark icon</title>
+		  <path fill="#7F8C8D" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path></svg>
+		  GITHUB</a></button>
+    </div>	    
+
+    <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative"
+    style="margin: 0px; width: 100%; height: fit-content;">
+      <div class="col p-4 d-flex flex-column position-static">
+        <strong><h3 class="d-inline-block mb-2 text-primary" style="text-align:center;"> 社群緣起</h3></strong>
+        <article id="card">
+            &emsp;&emsp;OpenCV是電腦視覺很方便的函式庫，而VSCODE則為目前主流的IDE，
+			VSCODE中有許多由開源人貢獻的EXTENSION，但卻沒能找到OpenCV的EXTENSION，
+			為了增加coding效率，因這樣的需求，由一群學生自行組成的社群就這樣誕生了!
+            <br/><br/>
+			<strong><h3 class="d-inline-block mb-2 text-primary" style="text-align:center;">一個逐漸成形的開源社群</h3></strong>
+			<br/>
+            &emsp;&emsp;雖然我們不像年會有上千、上萬人，但所有使用的開發工具及工作模式完全比照大型社群，
+			起初資源較少，但開源人是沒有人，沒有人是萬能的，沒有的資源就自己創造，
+			另外小社群有一個好處就是，成員的向心力以及凝聚力能夠緊密的多，一個逐漸成形的開源社群。
+        </article>
+      </div>
+    </div>  
+ 
+
+  </div>
+    
+</body>
+      
+<!--頁尾-->
+<footer class="blog-footer">
+  <div id="copyright">
+    <copyright></copyright>
+  </div>
+</footer>
+
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/view/title.js"></script>
+<script type="text/javascript" src="../js/view/copyright.js"></script>
 <script>
-    app.$mount('#app');
+  title.$mount("#title");
+  var vm = new Vue({
+    el: '#copyright'
+  });
 </script>

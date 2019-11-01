@@ -1,2 +1,2 @@
 # website
-[opencv intellsense extension](http://OpencvIntellisense.github.io/opencv_extension2/)
+[opencv intellsense extension](http://OpencvIntellisense.github.io/opencv_extension/)
